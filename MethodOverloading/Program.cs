@@ -6,7 +6,7 @@
         {
             Add(1, 2);
             Add(2.4m, 2.4m);
-            Add(1, 3, true);
+            Add(1, 1, true);
             //Add(1, 5, true); //--- extra practice, added userinput
         }
 
@@ -21,16 +21,33 @@
         public static string Add(int num1, int num2, bool check)//exercise 3
         {
             var sum = num1 + num2;
-            if (check == true && sum < 3)
+
+
+            if (check == true && sum >= 2)
             {
-                Console.WriteLine($"{sum} dollar");
-                return $"{sum} dollar";
+                Console.WriteLine($"{sum} dollars.");
+                return $"{sum} dollars";
             }
             else
             {
-                Console.WriteLine($"{sum} dollars.");
-                return $"{sum} dollars.";
+                Console.WriteLine($"{sum} dollar.");
+                return $"{sum} dollar.";
             }
+            // i did this one below to check,
+            // after finishing, I realized i did
+            // the less than symbol. LOL
+
+            //if (num1 + num2 >=2)
+            //{
+            //    Console.WriteLine($"{sum} dollars.");
+            //    return $"{sum} dollars";
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"{sum} dollar.");
+            //    return $"{sum} dollar";
+            //}
+
         }
 
 
@@ -48,15 +65,15 @@
         //    int userInput = Convert.ToInt32(Console.ReadLine());
 
         //    int realSum = sum + userInput;
-        //    if (check == true && realSum <= 2)
-        //    {
-        //        Console.WriteLine(realSum + $"dollar.");
-        //        return realSum + $"dollar.";
-        //    }
-        //    else
+        //    if (check == true && realSum >= 2)
         //    {
         //        Console.WriteLine(realSum + $"dollars.");
         //        return realSum + $"dollars.";
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine(realSum + $"dollar.");
+        //        return realSum + $"dollar.";
         //    }
         //}
 
